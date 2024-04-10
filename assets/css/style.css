@@ -1,0 +1,59 @@
+.darkMode {
+
+    background-color: black;
+    color: white;
+}
+
+.row {
+
+    display: flex;
+}
+
+.column {
+
+    width: 100%;
+    margin-right: 5px;
+    padding: 30px;
+    height: 600px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-left: 100px;
+}
+
+.centered {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.first-blog {
+
+    display: flex;
+    align-items: center;
+}
+
+.h1 {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    transform: translate(-50%, -50%);
+}
+
+.form {
+
+    display: inline-block;
+    width: 100%;
+
+}
