@@ -57,3 +57,58 @@
     width: 100%;
 
 }
+
+h2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: monospace;
+}
+
+.input-group {
+    font-weight: bold;
+
+}
+
+input [type-text] {
+
+    display: inline-block;
+    width: 88%;
+    padding: 40px, 40px;
+}
+
+label {
+
+    color: black;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Content {
+
+    height: 100px;
+    width: 80%;
+
+}
+
+#Submit {
+
+    width: 90%;
+    height: 30%;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.dark {
+
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}

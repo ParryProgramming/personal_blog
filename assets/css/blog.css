@@ -1,0 +1,56 @@
+h2 {
+
+    font-size: 50px;
+    font-family: monospace;
+}
+
+.nav {
+
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.back {
+
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: medium;
+    margin-right: 35px;
+}
+
+.darkMode {
+
+    background-color: black;
+    color: white;
+}
+
+.article {
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border-style: solid;
+    height: 600px;
+    text-indent: 1em;
+    text-decoration: underline;
+}
+
+.title {
+
+    border-bottom: thick;
+}
+
+.footer {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+a:link {
+
+    color: blue;
+}
