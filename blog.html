@@ -5,28 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/blog.css">
-    <title>Personal Blog</title>
+    <title>My Blog</title>
 </head>
 
 <body>
     <div class="header">
-        <h2>My first Blog</h2>
+        <h2 class="blog-title">My Personal Blog 🌙 </h2>
         <nav class="nav">
+
+            <!-- Added 'back' button on blog's second page -->
             <button class="back" onclick="history.back()">Go Back</button>
 
-            <button class="darkMode" onclick="darkMode()">Click Me &#127763;</button>
+            <!-- 'dark mode' button blog's second page -->
+
+            <button class="darkMode" onclick="darkMode()"> Dark Mode </button>
         </nav>
     </div>
+
+   <!-- Information about the user and post -->
     <article class="article">
 
-        <h3 class="title"> Blog Title </h3>
-        <div class="contents"> content here </div>
-        <div class="user"> Powered by author </div>
+        <h3 class="title"> Title </h3>
+        <div class="contents"> Content </div>
+        <div class="user"> Author </div>
 
     </article>
 
     <script src="./assets/js/blog.js"></script>
 
+    <!-- 'Made by' section and creator's contact info -->
     <footer class="footer">
         <h4>Made by a broke student</h4><br>
         Portfolio: <a href="#">Click Here </a>

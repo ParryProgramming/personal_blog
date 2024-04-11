@@ -4,7 +4,7 @@
     color: white;
 }
 
-.row {
+.boxes {
 
     display: flex;
 }
@@ -14,26 +14,22 @@
     width: 100%;
     margin-right: 5px;
     padding: 30px;
-    height: 600px;
+    height: 400px;
     border-style: solid;
     border-radius: 10px;
+    border: 10px solid;
 }
 
 .container {
 
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 80%;
-    padding-left: 100px;
-}
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 10px;
+    margin-left: -40px;
+    margin-top: -20px;
 
-.centered {
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .first-blog {
@@ -72,36 +68,15 @@ h2 {
 
 }
 
-input [type-text] {
-
-    display: inline-block;
-    width: 88%;
-    padding: 40px, 40px;
-}
 
 label {
 
     color: black;
+    font-weight: bold;
     font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace
 }
 
-#Content {
-
-    height: 100px;
-    width: 80%;
-
-}
-
-#Submit {
-
-    width: 90%;
-    height: 30%;
-    background-color: blue;
-    color: white;
-    cursor: pointer;
-    margin-top: 30px;
-}
 
 .dark {
 

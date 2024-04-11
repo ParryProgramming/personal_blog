@@ -1,7 +1,7 @@
-h2 {
+.blog-title {
 
-    font-size: 50px;
-    font-family: monospace;
+     font-size: 50px;
+    font-family: monospace; 
 }
 
 .nav {
@@ -36,12 +36,9 @@ h2 {
     border-style: solid;
     height: 600px;
     text-indent: 1em;
-    text-decoration: underline;
-}
-
-.title {
-
-    border-bottom: thick;
+    /* text-decoration: underline; */
+    border: 10px solid;
+  
 }
 
 .footer {
