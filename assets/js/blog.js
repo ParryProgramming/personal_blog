@@ -1,41 +1,42 @@
 // information from main page's form
-const displayNewPost = function () {
+const display = function () {
 
-    const stringContent = localStorage.getItem('allPost');
-    const newContent = JSON.parse(stringContent) || [];
-    const articleContainer = document.querySelector('.article')
-    
-    for (i = 0; i < newContent.length; i++) {
+    let mainPage = localStorage.getItem('myPosts');
+    let secondPage = JSON.parse(mainPage) || [];
+    let article = document.querySelector('.article')
 
-        // Add elements by id
-        let div = document.createElement('div');
-        let title = document.createElement('h1');
-        let content = document.createElement('p');
+    for (i = 0; i < secondPage.length; i++) {
+
+
         let author = document.createElement('h2');
+        let title = document.createElement('h1');
+        let div = document.createElement('div');
+        let content = document.createElement('p');
 
-        author.textContent = newContent[i].name;
-        title.textContent = newContent[i].title;
-        content.textContent = newContent[i].content;
-       
+
+        author.textContent = secondPage[i].name;
+        title.textContent = secondPage[i].title;
+        content.textContent = secondPage[i].content;
+
 
         // Content order on second page's 'article' area 
         author.setAttribute('class', 'username');
-        title.setAttribute('class', 'title');
         content.setAttribute('class', 'content');
+        title.setAttribute('class', 'title');
 
         div.append(title);
         div.append(content);
         div.append(author);
 
-        articleContainer.append(div);
+        article.append(div);
     };
 
-    console.log(newContent);
-    console.log(articleContainer);
+    console.log(secondPage);
+    console.log(article);
 
 }
 
-displayNewPost();
+display();
 
 //to engage Dark mode function on second page
 function darkMode() {

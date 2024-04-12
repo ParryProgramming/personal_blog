@@ -1,49 +1,49 @@
-const userInput = document.querySelector('#userName');
-const userTitle = document.querySelector('#title');
-const userContent = document.querySelector('#content');
-const submitButton = document.getElementById('submit');
-const warningMessage = document.getElementById('warningMessage');
+let username = document.querySelector('#userName');
+let title = document.querySelector('#title');
+let content = document.querySelector('#content');
+let submit = document.getElementById('submit');
+let warning = document.getElementById('warningMessage');
 let message;
 
 
 //Local storage for main blog page 
 
-const allPost = JSON.parse(localStorage.getItem('allPost')) || [];
+let myPosts = JSON.parse(localStorage.getItem('myPosts')) || [];
 
-submitButton.addEventListener('click', function (event) {
+submit.addEventListener('click', function (event) {
 
     event.preventDefault();
 
-    console.log(userContent);
+    console.log(content);
 
     //Warning Message when user leaves input null
-    if ((userInput.value === null || userInput.value === '') || (userTitle.value === null || userTitle.value === '')) {
+    if ((username.value === null || username.value === '') || (title.value === null || title.value === '')) {
 
-        warningMessage.textContent = 'Fill out the form';
+        warning.textContent = 'Fill out the form';
         message = setTimeout(function () {
 
-            warningMessage.textContent = '';
+            warning.textContent = '';
 
         }, 5000)
-    } else if (userContent.value === null || userContent.value.trim() === '') {
+    } else if (content.value === null || content.value.trim() === '') {
 
-        warningMessage.textContent = 'Fill out the form';
+        warning.textContent = 'Fill out the form';
         message = setTimeout(function () {
 
-            warningMessage.textContent = '';
+            warning.textContent = '';
         }, 5000)
     } else {
 
-        const userPost = {
+        let post = {
 
-            name: userInput.value,
-            title: userTitle.value,
-            content: userContent.value
+            name: username.value,
+            title: title.value,
+            content: content.value
         }
-        console.log(userPost);
+        console.log(post);
 
-        allPost.push(userPost);
-        localStorage.setItem('allPost', JSON.stringify(allPost));
+        myPosts.push(post);
+        localStorage.setItem('myPosts', JSON.stringify(myPosts));
 
         userDirect();
     }
@@ -65,7 +65,7 @@ function userDirect() {
 
 //reset form on main page
 
-submitButton.addEventListener('click', function () {
+submit.addEventListener('click', function () {
 
     document.querySelector('form').reset()
 
